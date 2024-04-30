@@ -77,6 +77,8 @@ class RegisterController extends Controller
             'bairro' => $data['bairro'], // Inclua o campo de bairro
             'cidade' => $data['cidade'], // Inclua o campo de cidade
             'estado' => $data['estado'], // Inclua o campo de estado
+            'role' => 0, // Definindo a role padrão como usuário (0)
+
         ]);
     }
 }

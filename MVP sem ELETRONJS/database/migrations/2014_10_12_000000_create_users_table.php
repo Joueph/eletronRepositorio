@@ -19,7 +19,6 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            // Adicionando campos de endereço
             $table->string('cep')->nullable();
             $table->string('logradouro')->nullable();
             $table->string('bairro')->nullable();
