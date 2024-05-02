@@ -1,9 +1,5 @@
 **Iniciando o projeto em Docker**
 
-**Electron-App Readme**
-
-Este é um guia para iniciar um aplicativo Electron simples. Certifique-se de seguir os passos abaixo para configurar e executar o aplicativo.
-
 **Passo a passo**
 
 1. **Crie o Arquivo .env:**
