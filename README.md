@@ -54,14 +54,6 @@ php artisan key:generate
 php artisan migrate:fresh --seed
 ```
 
-**Executando o aplicativo**
-
-Para iniciar o aplicativo Electron, execute o seguinte comando no terminal, estando na pasta do seu projeto:
-
-```
-npm start
-```
-
 
 **Electron-App Readme**
 
@@ -74,6 +66,8 @@ Este é um guia para iniciar um aplicativo Electron simples. Certifique-se de se
 ```
 npm -v
 ```
+
+Caso não esteja instalado, baixe-o neste link: https://nodejs.org/en/download/current
 
 **Passos de configuração**
 
