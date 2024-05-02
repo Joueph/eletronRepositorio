@@ -17,9 +17,10 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])
 
 // Adicione uma nova rota para o dashboard do administrador
 Route::middleware(['auth', 'admin'])->group(function () {
-    Route::get('/admin/dashboard', [AdminController::class, 'dashboard']) ->name('admin.dashboard');
-    //Log::info('Rota do dashboard do administrador acessada.');
+    Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
     Route::get('/admin/editar-usuario/{id}', [AdminController::class, 'editarUsuario'])->name('admin.editar-usuario');
-    Log::info('Rota de edição de usuário do administrador acessada.');
+    Route::put('/admin/editar-usuario/{id}', [AdminController::class, 'updateUsuario'])->name('admin.editar-usuario.update');
+    Route::delete('/admin/apagar-usuario/{id}', [AdminController::class, 'apagarUsuario'])->name('admin.apagar-usuario');
 
 });
+

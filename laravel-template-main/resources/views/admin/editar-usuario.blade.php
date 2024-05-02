@@ -24,13 +24,13 @@
             </div>
             
             <div class="mb-3">
-                <label for="logradouro" class="form-label">Logradouro</label>
+                <label for="logradouro" class="form-label">Rua</label>
                 <input type="text" class="form-control" id="logradouro" name="logradouro" value="{{ $user->logradouro }}">
             </div>
             
             <div class="mb-3">
-                <label for="rua" class="form-label">Rua</label>
-                <input type="text" class="form-control" id="rua" name="rua" value="{{ $user->rua }}">
+                <label for="rua" class="form-label">Bairro</label>
+                <input type="text" class="form-control" id="rua" name="bairro" value="{{ $user->bairro }}">
             </div>
             
             <div class="mb-3">

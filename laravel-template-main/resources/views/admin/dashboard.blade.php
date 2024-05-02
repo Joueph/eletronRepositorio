@@ -16,6 +16,7 @@
                     <th>Bairro</th>
                     <th>Cidade</th>
                     <th>Estado</th>
+                    <th>Acesso</th>
                     <th>Ações</th>
                 </tr>
             </thead>
@@ -30,10 +31,15 @@
                         <td>{{ $user->bairro }}</td>
                         <td>{{ $user->cidade }}</td>
                         <td>{{ $user->estado }}</td>
+                        <td>{{ $user->role }}</td>
                         <td>
                             <a href="{{ route('admin.editar-usuario', ['id' => $user->id]) }}" class="btn btn-primary">Editar</a>
+                            <form action="{{ route('admin.apagar-usuario', ['id' => $user->id]) }}" method="POST" style="display: inline;">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn btn-danger">Apagar</button>
+                            </form>
                         </td>
-
                     </tr>
                 @endforeach
             </tbody>
